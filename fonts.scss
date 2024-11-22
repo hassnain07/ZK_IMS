@@ -1,0 +1,160 @@
+$white: #ffffff;
+$cashelgrey: #4c5a52;
+$cashelf7: #f7f7f7;
+$cashelsoftgrey: #a5aca8;
+$cashellightgrey: #e2ebee;
+$casheldarkgrey: #2f3732;
+$secondarygreendark: #c3c671;
+$casheldarkblue: #225467;
+$cashelmidblue: #4d8296;
+$cashelgreen: #a8ad00;
+$cashellightgreen: #c7cd00;
+$cashellight: #aaafae;
+$cashelgold: #e7c683;
+$cashelblack: #3d4543;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  -webkit-font-smoothing: antialiased;
+}
+
+%bold {
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+bold,
+b,
+strong {
+  @extend %bold;
+}
+
+h1 {
+  font-size: 37px;
+  line-height: 44px;
+  color: $cashelgrey;
+}
+
+h2 {
+  font-size: 70px;
+  line-height: 85.47px;
+  color: $cashelgrey;
+}
+
+h3 {
+  font-size: 50px;
+  line-height: 60px;
+  color: $cashelgrey;
+}
+
+h4 {
+  font-size: 30px;
+  line-height: 38px;
+  color: $cashelgrey;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 30px;
+  color: $cashelgrey;
+}
+
+p,
+li,
+input,
+label,
+td {
+  font-size: 20px;
+  line-height: 25px;
+  color: $cashelgrey;
+}
+
+p.copyright {
+  font-size: 14px;
+  line-height: 22px;
+  color: $cashellight;
+  @media (max-width: 768px) {
+    text-align: center;
+    padding: 0px 20px;
+  }
+}
+
+.small_regular {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.cashel-soft-grey {
+  color: $cashelsoftgrey;
+}
+
+.white {
+  color: $white;
+}
+
+ul li {
+  list-style: none;
+}
+
+ol {
+  list-style-position: outside;
+  padding-left: 20px;
+  li {
+    padding-left: 10px;
+    padding-bottom: 15px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px 0px 15px;
+}
+
+p a {
+  color: $cashelgrey;
+  text-decoration: underline;
+  &:hover {
+    color: $cashellightgreen;
+  }
+}
+
+.button {
+  background: $cashelgreen;
+  color: $white;
+  text-align: center;
+  display: inline-block;
+  line-height: 60px;
+  padding: 0 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  outline: none !important;
+  border-radius: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid $cashelgreen;
+  min-width: 220px;
+  height: 60px;
+  width: 220px;
+  &:hover {
+    border-color: $cashellightgreen;
+    background: $cashellightgreen;
+    color: $white;
+  }
+  &:disabled[disabled],
+  &:disabled[disabled]:hover {
+  }
+}

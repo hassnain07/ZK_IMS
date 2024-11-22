@@ -1,0 +1,53 @@
+body {
+  font-family: "Open Sans", verdana, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+#container {
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#column-dropdown {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+#line-chart {
+  padding: 20px;
+}
+
+.Select-value {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 4px;
+  margin: 4px;
+  padding: 6px;
+  display: inline-block;
+}
+
+.modebar-container {
+  text-align: right;
+  padding-top: 10px;
+}
+
+.modebar-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modebar-btn:hover {
+  background-color: #45a049;
+}
